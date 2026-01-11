@@ -4,43 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Buddy Signup</title>
     <link rel="stylesheet" href="style/signUp.css">
 </head>
 
 <body>
-    <div id="container">
-        <div id="box">
-            <h2>Create an Account</h2>
-            <p>Join Us Today!</p>
-            <form id="signUp">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" required placeholder="Enter your full name">
+    <header>
+        <div class="logo-image">
+            <img id="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+        </div>
+    </header>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" required placeholder="Enter your email">
+    <main class="main-content">
+        <div id="container">
+            <div id="box">
+                <h2>Create an Account</h2>
+                <p>Join Us Today!</p>
 
+                <form id="signUp" autocomplete="on">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" autocomplete="name"
+                        placeholder="Enter your full name" required>
 
-                <label for="phonenumber">Phone Number</label>
-                <input type="text" id="phonenumber" required placeholder="Enter your phone number">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email"
+                        required>
 
-                <label for="location">City</label>
-                <input type="text" id="location" required placeholder="Enter your city">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel"
+                        placeholder="Enter your phone number" required>
+
+                    <label for="location">City</label>
+                    <input type="text" id="location" name="location" autocomplete="address-level2"
+                        placeholder="Enter your city" required>
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Create a password" required />
-         
+                    <div class="password-wrapper">
+                       <input
+  type="password"
+  id="password"
+  placeholder="Create a password"
+  autocomplete="new-password"
+  required
+>
+                        <span class="eye-toggle" data-target="password">👁️</span>
+                    </div>
+                    <small id="strength"></small>
 
-                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
-                    
 
-                <button type="submit">Sign Up</button>
-            </form>
-            <div id="lin">
-                Already have an account? <a href="signin.html">Sign In</a>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+<input
+  type="password"
+  id="confirmPassword"
+  placeholder="Confirm your password"
+  autocomplete="new-password"
+  required
+>                        <span class="eye-toggle" data-target="confirmPassword">👁️</span>
+                    </div>
+                    <small id="confirm-error"></small>
+
+
+                    <button type="submit" >Sign Up</button>
+                    <p id="error"></p>
+                </form>
+
+                <div id="lin">
+                    Already have an account? <a href="signin.html">Sign In</a>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img class="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-text">
+                © 2025 Travel Buddy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/signUp.js"></script>
 </body>
 
 </html>

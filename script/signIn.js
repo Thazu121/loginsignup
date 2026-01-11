@@ -1,13 +1,14 @@
-const users = [
-  { email: "user@example.com", password: "123456" },
-  { email: "admin@example.com", password: "admin123" }
-];
 
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 const signInForm = document.getElementById('signIn');
 const message = document.getElementById('message');
+
+
+let user = JSON.parse(localStorage.getItem("my")) || []
+
+console.log(user);
 
 togglePassword.addEventListener('click', () => {
   const type = passwordInput.type === 'password' ? 'text' : 'password';
@@ -29,7 +30,7 @@ signInForm.addEventListener('submit', (e) => {
     return;
   }
 
-  const user = users.find(u => u.email === email && u.password === password);
+  const user = user.find(u => u.email === email && u.password === password);
 
   if (user) {
     message.textContent = "Login successful!";

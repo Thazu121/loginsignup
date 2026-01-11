@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="./style/tourist-landing.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo-image">
+        <img id="logo" src="./image/logo.png" alt="Website Logo">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero">Home</a>
+        <a href="#destination">Destination</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="sub">
+        <h1>A JOURNEY WHERE <br> DREAM MEETS DESTINATION</h1>
+        <p>Discover unforgettable destinations, seamless bookings, and journeys crafted just for you.</p>
+        <button onclick="location.href='#destination'" id="explore">Explore</button>
+      </div>
+    </section>
+
+    <section id="destination">
+      <h2>Find Your Best Destination</h2>
+
+      <div class="grid-container">
+
+        <div class="card">
+          <img src="./image/bali.png" alt="Bali Island">
+          <div class="content">
+            <h3>Bali Island, Indonesia</h3>
+            <p>Bali is known for beautiful beaches, temples, waterfalls, and vibrant culture.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/banana beach.webp" alt="Banana Beach Thailand">
+          <div class="content">
+            <h3>Banana Beach, Thailand</h3>
+            <p>Tropical paradise with clear waters, snorkeling, and water activities.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/santorini.webp" alt="Santorini Island">
+          <div class="content">
+            <h3>Santorini Island, Greece</h3>
+            <p>Famous for white-washed houses, blue domes, sunsets, and luxury views.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/maldives.webp" alt="Maldives">
+          <div class="content">
+            <h3>Maldives, Indian Ocean</h3>
+            <p>Crystal-clear waters, luxury villas, and incredible marine life.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/swissalps.png" alt="Swiss Alps">
+          <div class="content">
+            <h3>Swiss Alps, Switzerland</h3>
+            <p>Snowy mountains and calm lakes — premium winter escapes.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/paris.png" alt="Paris">
+          <div class="content">
+            <h3>Paris, France</h3>
+            <p>Iconic city vibes — cafes, culture and romance.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./image/kyoto.png" alt="Kyoto Japan">
+          <div class="content">
+            <h3>Kyoto, Japan</h3>
+            <p>Temples, cherry blossoms and peaceful cultural scenes.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="features">
+      <h2 class="section-title">Why Travel With Us?</h2>
+
+      <div class="about-features-container">
+
+        <div class="about-box">
+          <img src="./image/about-icon.webp" class="about-icon" alt="About Us Icon">
+          <h3>About Us</h3>
+          <p>At <strong>Travel Buddy</strong>, we believe travel is more than visiting places — it's about meaningful
+            experiences, cultures, and lifelong memories.</p>
+        </div>
+
+        <div class="about-box">
+          <img src="./image/mission.png" class="about-icon" alt="Mission Icon">
+          <h3>Our Mission</h3>
+          <p>To inspire travelers to explore responsibly, enjoy authentic adventures, and travel with confidence through
+            sustainable journeys.</p>
+        </div>
+
+      </div>
+
+      <div class="new-features-grid">
+
+        <div class="new-feature-card">
+          <img src="./image/curated-des.png" alt="Curated Destination Icon">
+          <h3>Curated Destinations</h3>
+          <p>Beautiful, hand-picked travel spots for all types of trips.</p>
+        </div>
+
+        <div class="new-feature-card">
+          <img src="./image/support.png" alt="Support Icon">
+          <h3>24/7 Support</h3>
+          <p>We're always here whenever you need help during your journey.</p>
+        </div>
+
+        <div class="new-feature-card">
+          <img src="./image/booking.png" alt="Secure Booking Icon">
+          <h3>Secure Booking</h3>
+          <p>Safe, reliable, and fast bookings for a stress-free experience.</p>
+        </div>
+
+        <div class="new-feature-card">
+          <img src="./image/accomodation-icon.png" alt="Accommodation Icon">
+          <h3>Best Accommodation</h3>
+          <p>Stay in premium hotels and resorts selected by experts.</p>
+        </div>
+
+        <div class="new-feature-card">
+          <img src="./image/deals-icon.png" alt="Deals Icon">
+          <h3>Exclusive Deals</h3>
+          <p>Get unbeatable prices on flights, hotels, and tour packages.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Plan Your Trip</h2>
+      <p>Tell us about your dream destination and we’ll help you plan the perfect journey.</p>
+
+      <form class="travel-form">
+
+        <div class="form-t">
+          <div class="form-group">
+            <label for="Name">Full Name</label>
+            <input type="text" id="Name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="example@mail.com" required>
+          </div>
+        </div>
+
+        <div class="form-t">
+          <div class="form-group">
+            <label for="dest">Destination</label>
+            <input type="text" id="dest" placeholder="e.g., Bali, Maldives, Paris" required>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" required>
+          </div>
+        </div>
+
+        <div class="form-t">
+          <div class="form-group">
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" min="1" placeholder="e.g., 2" required>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget Range (₹)</label>
+            <select id="budget" name="budget" required>
+              <option value="50000-100000">₹50,000 - ₹1,00,000</option>
+              <option value="100000-200000">₹1,00,000 - ₹2,00,000</option>
+              <option value="200000-500000">₹2,00,000 - ₹5,00,000</option>
+              <option value="500000+">₹5,00,000+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Tell us more about your travel preferences..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Request</button>
+
+      </form>
+    </section>
+
+    <section class="newsletter">
+      <h2>Stay in the Loop</h2>
+      <p>Get travel tips, exclusive deals, and destination inspiration straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required id="e">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.style.display =
+        mobileMenu.style.display === "flex" ? "none" : "flex";
+    });
+  </script>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <img width="80" height="80" class="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+        <p>Your trusted companion for discovering the world.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#destination">Destinations</a></li>
+          <li><a href="#features">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Travel Buddy. All Rights Reserved.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
