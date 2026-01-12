@@ -1,48 +1,44 @@
-
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
-const togglePassword = document.getElementById('togglePassword');
-const signInForm = document.getElementById('signIn');
-const message = document.getElementById('message');
+const signInForm = document.getElementById("signIn")
+const message = document.getElementById("message")
+const togglePassword = document.getElementById("togglePassword")
+const passwordInput = document.getElementById("loginPassword")
 
 
-let user = JSON.parse(localStorage.getItem("my")) || []
-
-console.log(user);
-
-togglePassword.addEventListener('click', () => {
-  const type = passwordInput.type === 'password' ? 'text' : 'password';
-  passwordInput.type = type;
-  togglePassword.innerText = type === 'password' ? '👁' : '🙈';
+document.querySelector('.eye-toggle').addEventListener('click', function () {
+    const password = document.getElementById('loginPassword');
+    if (password.type === 'password') {
+        password.type = 'text';
+        this.textContent = '🙈';
+    } else {
+        password.type = 'password';
+        this.textContent = '👁️';
+    }
 });
+signInForm.addEventListener("submit", e => {
+    e.preventDefault()
 
+    const email = document.getElementById("email").value.trim().toLowerCase()
+    const password = passwordInput.value.trim()
 
+    const users = JSON.parse(localStorage.getItem("m")) || []
 
-signInForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+    if (users.length === 0) {
+        message.textContent = "No registered users found. Please sign up first."
+         message.style.color = "red"
+         return
+    }
 
-  const email = emailInput.value.trim();
-  const password = passwordInput.value.trim();
+    const validUser = users.find(u => u.email === email && u.password === password)
 
-  if (!email || !password) {
-    message.textContent = "All fields are required";
-    message.style.color = "red";
-    return;
-  }
+    if (!validUser) {
+        message.textContent = "Invalid email or password"; message.style.color = "red"
+         return
+    }
 
-  const user = user.find(u => u.email === email && u.password === password);
-
-  if (user) {
-    message.textContent = "Login successful!";
+    message.textContent = "Login successful! "
     message.style.color = "green";
 
-    setTimeout(() => {
-      window.location.href = "tourist-landing.html";
-    }, 1000);
-  } else {
-    message.textContent = "Invalid email or password";
-    message.style.color = "red";
-  }
+    localStorage.setItem("loggedInUser", JSON.stringify(validUser))
+
+    setTimeout(() => { window.location.href = "tourist-landing.html"; }, 1000)
 });
-
-

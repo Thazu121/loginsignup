@@ -4,52 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Travel Buddy</title>
     <link rel="stylesheet" href="style/signIn.css">
 </head>
 
 <body>
-    <section>
-        <div id="container">
+    <header>
+        <img id="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+    </header>
+
+    <main id="main-content">
+        <section id="container" aria-labelledby="signInHeading">
             <div id="box">
-                <h2>Sign In</h2>
-                <p>Welcome Back!</p>
+                <header>
+                    <h2 id="signInHeading">Sign In</h2>
+                    <p>Welcome Back!</p>
+                </header>
 
                 <form id="signIn">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="Enter Your Email">
+                    <input type="email" id="email" autocomplete="username" required placeholder="Enter Your Email">
 
-
-                    <label for="password">Password</label>
+                    <label for="loginPassword">Password</label>
                     <div id="password-wrapper">
                         <input type="password" id="loginPassword" autocomplete="current-password" required>
-                        <span id="togglePassword">👁</span>
+                        <span class="eye-toggle" data-target="password">👁️</span>
                     </div>
-
-
 
                     <button type="submit" id="signInBtn">Sign In</button>
 
-
-
-
-                    <p id="message"></p>
-
+                    <p id="message" role="alert"></p>
                 </form>
-                <a href="#" class="forgot">Forgot Password?</a>
-
-
-                <div id="link">
-                    <p>Don't have an account?</p>
-                    <a href="signup.html">Sign Up</a>
+                <div>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                    <div id="link">
+                        <p>Don't have an account?</p>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
                 </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img class="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+            </div>
+            <div class="footer-text">
+                © 2025 Travel Buddy. All Rights Reserved.
             </div>
         </div>
+    </footer>
 
-    </section>
     <script src="script/signIn.js"></script>
-
 </body>
 
 </html>

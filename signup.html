@@ -10,13 +10,11 @@
 
 <body>
     <header>
-        <div class="logo-image">
             <img id="logo" src="./image/logo.png" alt="Travel Buddy Logo">
-        </div>
     </header>
 
     <main class="main-content">
-        <div id="container">
+        <section id="container">
             <div id="box">
                 <h2>Create an Account</h2>
                 <p>Join Us Today!</p>
@@ -40,13 +38,8 @@
 
                     <label for="password">Password</label>
                     <div class="password-wrapper">
-                       <input
-  type="password"
-  id="password"
-  placeholder="Create a password"
-  autocomplete="new-password"
-  required
->
+                        <input type="password" id="password" placeholder="Create a password" autocomplete="new-password"
+                            required>
                         <span class="eye-toggle" data-target="password">👁️</span>
                     </div>
                     <small id="strength"></small>
@@ -54,26 +47,22 @@
 
                     <label for="confirmPassword">Confirm Password</label>
                     <div class="password-wrapper">
-<input
-  type="password"
-  id="confirmPassword"
-  placeholder="Confirm your password"
-  autocomplete="new-password"
-  required
->                        <span class="eye-toggle" data-target="confirmPassword">👁️</span>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password"
+                            autocomplete="new-password" required> <span class="eye-toggle"
+                            data-target="confirmPassword">👁️</span>
                     </div>
                     <small id="confirm-error"></small>
 
 
-                    <button type="submit" >Sign Up</button>
+                    <button type="submit">Sign Up</button>
                     <p id="error"></p>
                 </form>
+                
 
                 <div id="lin">
                     Already have an account? <a href="signin.html">Sign In</a>
                 </div>
-            </div>
-        </div>
+            </section>
     </main>
 
     <footer>
@@ -81,7 +70,6 @@
             <div class="footer-logo">
                 <img class="logo" src="./image/logo.png" alt="Travel Buddy Logo">
             </div>
-            <div class="footer-divider"></div>
             <div class="footer-text">
                 © 2025 Travel Buddy. All Rights Reserved.
             </div>
