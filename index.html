@@ -14,36 +14,31 @@
     </header>
 
     <main id="main-content">
-        <section id="container" aria-labelledby="signInHeading">
+        <section id="container">
             <div id="box">
-                <header>
+                <div class="form-header">
                     <h2 id="signInHeading">Sign In</h2>
                     <p>Welcome Back!</p>
-                </header>
+                </div>
 
                 <form id="signIn">
                     <label for="email">Email</label>
-                    <input type="email" id="email" autocomplete="username" required placeholder="Enter Your Email">
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" autocomplete="username"
+                        required>
 
                     <label for="loginPassword">Password</label>
                     <div class="password-wrapper">
-                        <input type="password" id="loginPassword" autocomplete="current-password" required>
-                        <span class="eye-toggle" data-target="loginPassword">👁️</span>
+                        <input type="password" id="loginPassword" name="password" minlength="8"
+                            autocomplete="current-password" required>
+                        <span class="eye-toggle">👁️</span>
                     </div>
 
                     <button type="submit" id="signInBtn">Sign In</button>
-
                     <p id="message" role="alert"></p>
                 </form>
-                <div>
-                    <a href="#" id="forgotPassword" class="forgot">Forgot Password?</a>
-                    <div id="link">
-                        <p>Don't have an account?</p>
-                        <a href="signup.html">Sign Up</a>
-                    </div>
-                </div>
             </div>
         </section>
+
     </main>
 
     <footer>

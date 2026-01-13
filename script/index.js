@@ -20,6 +20,12 @@ signInForm.addEventListener("submit", e => {
     const password = passwordInput.value.trim()
     const users = JSON.parse(localStorage.getItem("m")) || []
 
+    
+    if (!email || !password) {
+        return showMessage("Please fill in all fields", "error")
+    }
+
+
     if (users.length === 0) return showMessage("No registered users found. Please sign up first.", "error")
 
     const validUser = users.find(u => u.email === email && u.password === password)

@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 header img {
@@ -25,6 +25,7 @@ header img {
 #main-content {
     width: 100%;
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     padding: 16px 0;
@@ -116,6 +117,11 @@ button {
 button:hover {
     background-color: #1d4ed8;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
 }
 
 .forgot, #link a {

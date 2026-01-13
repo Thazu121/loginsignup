@@ -147,6 +147,8 @@ if (signUpForm) {
         users.push({ name, email, phoneNumber: normalizedPhone, city, password })
         localStorage.setItem("m", JSON.stringify(users))
 
+        users = JSON.parse(localStorage.getItem("m"))
+
         showMessage(error, "Signup successful!", "success")
 
         signUpForm.reset();
