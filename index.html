@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Travel Buddy</title>
-    <link rel="stylesheet" href="style/signIn.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
@@ -26,9 +26,9 @@
                     <input type="email" id="email" autocomplete="username" required placeholder="Enter Your Email">
 
                     <label for="loginPassword">Password</label>
-                    <div id="password-wrapper">
+                    <div class="password-wrapper">
                         <input type="password" id="loginPassword" autocomplete="current-password" required>
-                        <span class="eye-toggle" data-target="password">👁️</span>
+                        <span class="eye-toggle" data-target="loginPassword">👁️</span>
                     </div>
 
                     <button type="submit" id="signInBtn">Sign In</button>
@@ -36,7 +36,7 @@
                     <p id="message" role="alert"></p>
                 </form>
                 <div>
-                    <a href="#" class="forgot">Forgot Password?</a>
+                    <a href="#" id="forgotPassword" class="forgot">Forgot Password?</a>
                     <div id="link">
                         <p>Don't have an account?</p>
                         <a href="signup.html">Sign Up</a>
@@ -57,7 +57,7 @@
         </div>
     </footer>
 
-    <script src="script/signIn.js"></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 
 <body>
     <header>
-            <img id="logo" src="./image/logo.png" alt="Travel Buddy Logo">
+        <img id="logo" src="./image/logo.png" alt="Travel Buddy Logo">
     </header>
 
     <main class="main-content">
@@ -21,48 +21,40 @@
 
                 <form id="signUp" autocomplete="on">
                     <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" autocomplete="name"
-                        placeholder="Enter your full name" required>
+                    <input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="Enter your full name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email"
-                        required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email" required>
 
                     <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel"
-                        placeholder="Enter your phone number" required>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" placeholder="Enter your phone number" required>
 
                     <label for="location">City</label>
-                    <input type="text" id="location" name="location" autocomplete="address-level2"
-                        placeholder="Enter your city" required>
+                    <input type="text" id="location" name="location" autocomplete="address-level2" placeholder="Enter your city" required>
 
                     <label for="password">Password</label>
                     <div class="password-wrapper">
-                        <input type="password" id="password" placeholder="Create a password" autocomplete="new-password"
-                            required>
-                        <span class="eye-toggle" data-target="password">👁️</span>
+                        <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Create a password" required>
+                        <span class="eye-toggle" data-target="password" aria-label="Toggle password visibility">👁️</span>
                     </div>
                     <small id="strength"></small>
 
-
                     <label for="confirmPassword">Confirm Password</label>
                     <div class="password-wrapper">
-                        <input type="password" id="confirmPassword" placeholder="Confirm your password"
-                            autocomplete="new-password" required> <span class="eye-toggle"
-                            data-target="confirmPassword">👁️</span>
+                        <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" placeholder="Confirm your password" required>
+                        <span class="eye-toggle" data-target="confirmPassword" aria-label="Toggle password visibility">👁️</span>
                     </div>
                     <small id="confirm-error"></small>
-
 
                     <button type="submit">Sign Up</button>
                     <p id="error"></p>
                 </form>
-                
 
                 <div id="lin">
-                    Already have an account? <a href="signin.html">Sign In</a>
+                    Already have an account? <a href="index.html">Sign In</a>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
 
     <footer>

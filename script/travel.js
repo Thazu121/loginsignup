@@ -1,5 +1,5 @@
 if (!localStorage.getItem("loggedInUser")) {
-  window.location.href = "signin.html";
+  window.location.href = "index.html";
 }
 
 const authBtn = document.getElementById("authBtn");
@@ -14,7 +14,7 @@ function setupLogout(button) {
   button.addEventListener("click", (e) => {
     e.preventDefault();
     localStorage.removeItem("loggedInUser");
-    window.location.href = "signin.html";
+    window.location.href = "index.html";
   });
 }
 
