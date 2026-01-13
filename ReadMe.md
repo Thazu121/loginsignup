@@ -112,6 +112,11 @@ Travel-Buddy/
 
 ---
 
+
+## Repository Link
+https://github.com/Thazu121/loginsignup.git
+
+
 ## 🚧 Future Enhancements
 
 - Modal-based forgot password UI  
