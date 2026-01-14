@@ -116,6 +116,12 @@ Travel-Buddy/
 ## Repository Link
 https://github.com/Thazu121/loginsignup.git
 
+## Screenshot
+
+![SignUp](image/signUp.png)
+
+![SignIn](image/index.png)
+
 
 ## 🚧 Future Enhancements
 
