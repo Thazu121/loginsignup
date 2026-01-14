@@ -124,6 +124,11 @@ input:focus-visible {
     outline-offset: 2px;
 }
 
+#message {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
 .forgot, #link a {
     display: block;
     text-align: center;
@@ -137,11 +142,7 @@ input:focus-visible {
 .forgot:hover, #link a:hover {
     color: #2563eb;
 }
-#message {
-    font-size: 0.85rem;
-    text-align: center;
-    margin-top: 0.5rem;
-}
+
 footer {
     background-color: #dfefff;
     width: 100%;
